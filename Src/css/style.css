@@ -1,0 +1,678 @@
+@charset "utf-8";
+/*
+作者：Amy.dai
+日期：2017.6.9
+描述：全局变量的定义
+Email:276906930@qq.com
+*/
+/*基础颜色定义*/
+/*文字大小定义*/
+/*定义圆角大小*/
+/*色系定义*/
+.ft-size-b {
+  font-size: 30px;
+}
+.ft-size-m {
+  font-size: 18px;
+}
+.ft-green {
+  color: #2fb9a0;
+}
+body {
+  font-family: "微软雅黑";
+  font-size: 14px;
+  color: #231814;
+  background-color: #ffffff;
+}
+img {
+  max-width: 100%;
+}
+.w {
+  width: 1200px;
+  margin: 0 auto;
+}
+.content-wrap {
+  margin-top: 85px;
+}
+.page-loading {
+  padding-top: 300px;
+  padding-bottom: 300px;
+  background: url(images/loading7.gif) no-repeat center center;
+}
+.btn-base {
+  width: 90px;
+  height: 40px;
+  font-size: 18px;
+  background-color: #2fb9a0;
+  color: #ffffff;
+  border: 1px solid #2fb9a0;
+  font-weight: nomarl;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+a.btn.btn-base {
+  vertical-align: bottom;
+}
+a.btn.btn-base:hover,
+a.btn-base:focus,
+a.btn.btn-base:active {
+  color: #ffffff;
+}
+a.scrollup {
+  height: 32px;
+  width: 32px;
+  color: #fff;
+  font-size: 18px;
+  line-height: 32px;
+  text-align: center;
+  text-decoration: none;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 9999;
+  opacity: 0.5;
+  background-color: #2fb9a0;
+}
+a.scrollup:hover {
+  opacity: 1;
+  color: #fff;
+}
+.main-nav {
+  height: 85px;
+  font-size: 18px;
+  color: #231814;
+  background-color: #ffffff;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 0;
+  z-index: 1000;
+  border-radius: 0;
+}
+.navbar-header img {
+  max-height: 85px;
+}
+.main-nav .navbar-right {
+  margin-top: 18px;
+  margin-right: 0;
+}
+.main-nav .navbar-nav {
+  margin-top: 11px;
+}
+.main-nav .navbar-nav > li {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.main-nav .navbar-nav > li > a,
+.nav > li > a:focus,
+.nav > li > a:active,
+.nav > li > a:hover {
+  text-decoration: none;
+  background-color: transparent;
+  color: #231814;
+  line-height: 28px;
+  border-bottom: 1px solid #ffffff;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+.main-nav .navbar-nav > li.active > a {
+  border-bottom: 1px solid #2fb9a0;
+  color: #2fb9a0;
+}
+.main-nav .navbar-btn {
+  border: 1px solid #2fb9a0;
+  color: #2fb9a0;
+  background-color: #ffffff;
+}
+.modal-open .navbar-fixed-top {
+  margin-right: 17px;
+}
+.modal-open .qq-consult {
+  right: 57px;
+}
+.banner {
+  min-width: 1200px;
+}
+.content-state {
+  padding-bottom: 40px;
+}
+.content-state .title h2 {
+  color: #231814;
+  margin-bottom: 0;
+}
+.content-state .title p {
+  margin-bottom: 0;
+}
+.pt-40 {
+  padding-top: 40px;
+}
+.pl0 {
+  padding-left: 0;
+}
+.pr0 {
+  padding-right: 0;
+}
+.resume-banner {
+  position: relative;
+  max-height: 450px;
+  overflow: hidden;
+}
+.m-base {
+  position: absolute;
+  width: 800px;
+  height: 200px;
+  top: 50%;
+  left: 50%;
+  margin-top: -100px;
+  margin-left: -400px;
+}
+.head-icon {
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+}
+.m-base-desc {
+  padding-top: 20px;
+  padding-left: 50px;
+}
+.m-base-desc p {
+  font-size: 18px;
+  line-height: 33px;
+}
+.m-base-desc p.name {
+  font-size: 36px;
+}
+.m-ability p {
+  text-align: left;
+  font-size: 16px;
+  line-height: 28px;
+}
+@-webkit-keyframes twinkling {
+  /*透明度由0到1*/
+  25% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  75% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+@-webkit-keyframes fadeing {
+  /*透明度由0.75到1*/
+  0% {
+    opacity: 0.75;
+    /*透明度为0.75*/
+  }
+  100% {
+    opacity: 1;
+    /*透明度为1*/
+  }
+}
+.m-tech span {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #2fb9a0;
+  color: #ffffff;
+  margin: 10px;
+  vertical-align: middle;
+  box-shadow: 0 0 1px transparent;
+  -webkit-animation: twinkling 2s infinite ease-in-out;
+}
+.m-tech span.twink2 {
+  -webkit-animation: twinkling 1.5s infinite ease-in-out;
+}
+.m-tech span.fade {
+  -webkit-animation: fadeing 2s infinite ease-in-out;
+}
+.pro-item {
+  padding: 20px;
+  background-color: #f5f5f5;
+  margin: 10px;
+}
+.pro-item h4 {
+  color: #2fb9a0;
+}
+.pro-com {
+  text-align: left;
+  font-size: 20px;
+  color: #646464;
+  -webkit-animation-name: fadeinL;
+  -moz-animation-name: fadeinL;
+  -ms-animation-name: fadeinL;
+  animation-name: fadeinL;
+}
+.pro-item {
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+}
+.pro-item:before {
+  pointer-events: none;
+  position: absolute;
+  content: '';
+  height: 0;
+  width: 0;
+  top: 0;
+  left: 0;
+  background: white;
+  /* IE9 */
+  background: linear-gradient(135deg, white 45%, #aaa 50%, #ccc 56%, white 80%);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr='#ffffff', endColorstr='#000000');
+  /*For IE7-8-9*/
+  z-index: 1000;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: width, height;
+  transition-property: width, height;
+}
+.pro-item:hover:before,
+.pro-item:focus:before,
+.pro-item:active:before {
+  width: 25px;
+  height: 25px;
+}
+.m-contact {
+  font-size: 18px;
+}
+.m-contact p {
+  margin-top: 15px;
+}
+.m-contact p h4 {
+  font-weight: bold;
+  color: #2fb9a0;
+}
+.m-contact img {
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+}
+/*工作经验栏目轮播*/
+.banner {
+  min-width: 1200px;
+}
+.banner .banner-prev,
+.banner .banner-next {
+  content: '';
+  width: 30px;
+  height: 110px;
+  position: absolute;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.25);
+  opacity: 1;
+  z-index: 20;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: center;
+  top: 150px;
+  display: none;
+  background-size: cover;
+  width: 0;
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease;
+  background-image: none;
+}
+.banner:hover .banner-prev,
+.banner:hover .banner-next {
+  display: block;
+}
+.banner .banner-prev {
+  left: 0;
+}
+.banner .banner-prev:before {
+  content: '\e257';
+  left: 0;
+  top: 0;
+  width: 30px;
+  height: 110px;
+  display: block;
+  line-height: 110px;
+  text-align: center;
+  font-family: 'Glyphicons Halflings';
+  font-size: 20px;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.25);
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all 0.5s ease;
+}
+.banner .banner-next {
+  right: 0;
+}
+.banner .banner-next:before {
+  content: '\e258';
+  width: 30px;
+  height: 110px;
+  display: block;
+  line-height: 110px;
+  text-align: center;
+  font-family: 'Glyphicons Halflings';
+  font-size: 20px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.25);
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all 0.5s ease;
+}
+.carousel-fade .carousel-inner .item {
+  height: 350px;
+  transition-property: opacity;
+}
+.carousel-fade .carousel-inner .item1 {
+  background-color: #8de3d3;
+}
+.carousel-fade .carousel-inner .item2 {
+  background-color: #c3ebed;
+}
+.carousel-fade .carousel-inner .item3 {
+  background-color: #ecc9c5;
+}
+.carousel-fade .carousel-inner .item-c {
+  padding: 30px 100px;
+  font-size: 20px;
+  line-height: 40px;
+}
+.carousel-fade .carousel-inner .item,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  opacity: 0;
+}
+.carousel-fade .carousel-inner .active,
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+.carousel-fade .carousel-inner .next,
+.carousel-fade .carousel-inner .prev,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  transform: translate3d(0, 0, 0);
+}
+.carousel-fade .carousel-control {
+  z-index: 2;
+}
+/* --------------------------------
+
+Vertical navigation
+
+-------------------------------- */
+.cd-vertical-nav {
+  position: fixed;
+  z-index: 80;
+  right: 0;
+  top: 0;
+  bottom: auto;
+  height: 100vh;
+  width: 90px;
+  max-width: none;
+  max-height: none;
+  overflow-y: auto;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+  -webkit-transform-origin: right bottom;
+  -moz-transform-origin: right bottom;
+  -ms-transform-origin: right bottom;
+  -o-transform-origin: right bottom;
+  transform-origin: right bottom;
+  -webkit-transition: -webkit-transform 0.2s;
+  -moz-transition: -moz-transform 0.2s;
+  transition: transform 0.2s;
+  border-radius: 0.25em;
+  background-color: transparent;
+  display: table;
+}
+.cd-vertical-nav::before {
+  /* this is the navigation background */
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  -webkit-transform: translateX(100%);
+  -moz-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  -o-transform: translateX(100%);
+  transform: translateX(100%);
+  -webkit-transition: -webkit-transform 0.4s;
+  -moz-transition: -moz-transform 0.4s;
+  transition: transform 0.4s;
+}
+.no-touch .cd-vertical-nav:hover::before,
+.touch .cd-vertical-nav::before {
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+  transform: translateX(0);
+}
+.cd-vertical-nav ul {
+  /* vertically align <ul> inside <nav>*/
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  list-style: none;
+  padding: 0;
+}
+.cd-vertical-nav li {
+  padding: 0;
+}
+.cd-vertical-nav span {
+  padding: 0;
+}
+.cd-vertical-nav a {
+  display: block;
+  font-weight: bold;
+  position: relative;
+  padding: 3em 0 0;
+  margin: 1.4em auto;
+  border-bottom: none;
+  font-size: 1.2rem;
+  color: #999999;
+}
+.cd-vertical-nav a:link {
+  text-decoration: none;
+}
+.cd-vertical-nav a:visited {
+  text-decoration: none;
+}
+.cd-vertical-nav a:hover {
+  text-decoration: none;
+}
+.cd-vertical-nav a.active {
+  color: #999999;
+  text-decoration: none;
+}
+.cd-vertical-nav a::before,
+.cd-vertical-nav a::after {
+  /* used to create the filled circle and the background icon */
+  content: '';
+  position: absolute;
+  left: 50%;
+  /* Force Hardware Acceleration */
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+}
+.cd-vertical-nav a::before {
+  /* filled circle */
+  top: 0;
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  background: #8de3d3;
+  -webkit-transform: translateX(-50%) scale(0.25);
+  -moz-transform: translateX(-50%) scale(0.25);
+  -ms-transform: translateX(-50%) scale(0.25);
+  -o-transform: translateX(-50%) scale(0.25);
+  transform: translateX(-50%) scale(0.25);
+  -webkit-transition: -webkit-transform 0.4s, background-color 0.2s;
+  -moz-transition: -moz-transform 0.4s, background-color 0.2s;
+  transition: transform 0.4s, background-color 0.2s;
+}
+.cd-vertical-nav a::after {
+  opacity: 0;
+  height: 16px;
+  width: 16px;
+  color: #ffffff;
+  font-size: 14px;
+  top: 6px;
+  font-family: 'Glyphicons Halflings';
+  -webkit-transform: translateX(-50%) scale(0);
+  -moz-transform: translateX(-50%) scale(0);
+  -ms-transform: translateX(-50%) scale(0);
+  -o-transform: translateX(-50%) scale(0);
+  transform: translateX(-50%) scale(0);
+  -webkit-transition: -webkit-transform 0.4s 0s, opacity 0.1s 0.3s;
+  -moz-transition: -moz-transform 0.4s 0s, opacity 0.1s 0.3s;
+  transition: transform 0.4s 0s, opacity 0.1s 0.3s;
+}
+.cd-vertical-nav a.active::before,
+.no-touch .cd-vertical-nav a:hover::before {
+  background-color: #2fb9a0;
+}
+.cd-vertical-nav li:first-of-type a::after {
+  content: "\e008";
+  -webkit-transform: translateX(-50%) translateY(4.5em) scale(0.01);
+  -moz-transform: translateX(-50%) translateY(4.5em) scale(0.01);
+  -ms-transform: translateX(-50%) translateY(4.5em) scale(0.01);
+  -o-transform: translateX(-50%) translateY(4.5em) scale(0.01);
+  transform: translateX(-50%) translateY(4.5em) scale(0.01);
+}
+.cd-vertical-nav li:first-of-type a::before {
+  -webkit-transform: translateX(-50%) translateY(4.5em) scale(0.25);
+  -moz-transform: translateX(-50%) translateY(4.5em) scale(0.25);
+  -ms-transform: translateX(-50%) translateY(4.5em) scale(0.25);
+  -o-transform: translateX(-50%) translateY(4.5em) scale(0.25);
+  transform: translateX(-50%) translateY(4.5em) scale(0.25);
+}
+.cd-vertical-nav li:nth-of-type(2) a::after {
+  content: "\e125";
+  -webkit-transform: translateX(-50%) translateY(1.5em) scale(0.01);
+  -moz-transform: translateX(-50%) translateY(1.5em) scale(0.01);
+  -ms-transform: translateX(-50%) translateY(1.5em) scale(0.01);
+  -o-transform: translateX(-50%) translateY(1.5em) scale(0.01);
+  transform: translateX(-50%) translateY(1.5em) scale(0.01);
+}
+.cd-vertical-nav li:nth-of-type(2) a::before {
+  -webkit-transform: translateX(-50%) translateY(1.5em) scale(0.25);
+  -moz-transform: translateX(-50%) translateY(1.5em) scale(0.25);
+  -ms-transform: translateX(-50%) translateY(1.5em) scale(0.25);
+  -o-transform: translateX(-50%) translateY(1.5em) scale(0.25);
+  transform: translateX(-50%) translateY(1.5em) scale(0.25);
+}
+.cd-vertical-nav li:nth-of-type(3) a::after {
+  content: "\e124";
+  -webkit-transform: translateX(-50%) translateY(-1.5em) scale(0.01);
+  -moz-transform: translateX(-50%) translateY(-1.5em) scale(0.01);
+  -ms-transform: translateX(-50%) translateY(-1.5em) scale(0.01);
+  -o-transform: translateX(-50%) translateY(-1.5em) scale(0.01);
+  transform: translateX(-50%) translateY(-1.5em) scale(0.01);
+}
+.cd-vertical-nav li:nth-of-type(3) a::before {
+  -webkit-transform: translateX(-50%) translateY(-1.5em) scale(0.25);
+  -moz-transform: translateX(-50%) translateY(-1.5em) scale(0.25);
+  -ms-transform: translateX(-50%) translateY(-1.5em) scale(0.25);
+  -o-transform: translateX(-50%) translateY(-1.5em) scale(0.25);
+  transform: translateX(-50%) translateY(-1.5em) scale(0.25);
+}
+.cd-vertical-nav li:nth-of-type(4) a::after {
+  content: "\e032";
+  -webkit-transform: translateX(-50%) translateY(-4.5em) scale(0.01);
+  -moz-transform: translateX(-50%) translateY(-4.5em) scale(0.01);
+  -ms-transform: translateX(-50%) translateY(-4.5em) scale(0.01);
+  -o-transform: translateX(-50%) translateY(-4.5em) scale(0.01);
+  transform: translateX(-50%) translateY(-4.5em) scale(0.01);
+}
+.cd-vertical-nav li:nth-of-type(4) a::before {
+  -webkit-transform: translateX(-50%) translateY(-4.5em) scale(0.25);
+  -moz-transform: translateX(-50%) translateY(-4.5em) scale(0.25);
+  -ms-transform: translateX(-50%) translateY(-4.5em) scale(0.25);
+  -o-transform: translateX(-50%) translateY(-4.5em) scale(0.25);
+  transform: translateX(-50%) translateY(-4.5em) scale(0.25);
+}
+.cd-vertical-nav li:nth-of-type(5) a::after {
+  content: "\e182";
+  -webkit-transform: translateX(-50%) translateY(-7.5em) scale(0.01);
+  -moz-transform: translateX(-50%) translateY(-7.5em) scale(0.01);
+  -ms-transform: translateX(-50%) translateY(-7.5em) scale(0.01);
+  -o-transform: translateX(-50%) translateY(-7.5em) scale(0.01);
+  transform: translateX(-50%) translateY(-7.5em) scale(0.01);
+}
+.cd-vertical-nav li:nth-of-type(5) a::before {
+  -webkit-transform: translateX(-50%) translateY(-7.5em) scale(0.25);
+  -moz-transform: translateX(-50%) translateY(-7.5em) scale(0.25);
+  -ms-transform: translateX(-50%) translateY(-7.5em) scale(0.25);
+  -o-transform: translateX(-50%) translateY(-7.5em) scale(0.25);
+  transform: translateX(-50%) translateY(-7.5em) scale(0.25);
+}
+.cd-vertical-nav .label {
+  display: block;
+  /* Force Hardware Acceleration */
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-transform: translateX(100%);
+  -moz-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  -o-transform: translateX(100%);
+  transform: translateX(100%);
+  -webkit-transition: -webkit-transform 0.4s;
+  -moz-transition: -moz-transform 0.4s;
+  transition: transform 0.4s;
+}
+.no-touch .cd-vertical-nav:hover a::before,
+.no-touch .cd-vertical-nav:hover a::after,
+.touch .cd-vertical-nav li:nth-of-type(n) a::before,
+.touch .cd-vertical-nav li:nth-of-type(n) a::after {
+  -webkit-transform: translateX(-50%) scale(1);
+  -moz-transform: translateX(-50%) scale(1);
+  -ms-transform: translateX(-50%) scale(1);
+  -o-transform: translateX(-50%) scale(1);
+  transform: translateX(-50%) scale(1);
+  /* set a rotation to fix bug on Firefox - http://gielberkers.com/how-to-fix-shaking-css-transitions-in-firefox/ */
+  -moz-transform: translateX(-50%) scale(1) rotate(0.02deg);
+}
+.no-touch .cd-vertical-nav:hover a::after,
+.touch .cd-vertical-nav a::after {
+  opacity: 1;
+  -webkit-transition: -webkit-transform 0.4s, opacity 0s;
+  -moz-transition: -moz-transform 0.4s, opacity 0s;
+  transition: transform 0.4s, opacity 0s;
+}
+.no-touch .cd-vertical-nav:hover .label,
+.touch .cd-vertical-nav .label {
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+  transform: translateX(0);
+}

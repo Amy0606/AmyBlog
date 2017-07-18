@@ -1,0 +1,95 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "angular@1.4.6",
+        "scope": null,
+        "escapedName": "angular",
+        "name": "angular",
+        "rawSpec": "1.4.6",
+        "spec": "1.4.6",
+        "type": "version"
+      },
+      "E:\\wamp\\www\\ZXSite"
+    ]
+  ],
+  "_cnpm_publish_time": 1442492882163,
+  "_from": "angular@1.4.6",
+  "_hasShrinkwrap": false,
+  "_id": "angular@1.4.6",
+  "_inCache": true,
+  "_location": "/angular",
+  "_nodeVersion": "0.10.26",
+  "_npmUser": {
+    "name": "angularcore",
+    "email": "angular-core+npm@google.com"
+  },
+  "_npmVersion": "2.0.2",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "angular@1.4.6",
+    "scope": null,
+    "escapedName": "angular",
+    "name": "angular",
+    "rawSpec": "1.4.6",
+    "spec": "1.4.6",
+    "type": "version"
+  },
+  "_requiredBy": [
+    "#DEV:/"
+  ],
+  "_resolved": "https://registry.npm.taobao.org/angular/download/angular-1.4.6.tgz",
+  "_shasum": "905d2a916157826b7f6d7c832848aa98b16a1430",
+  "_shrinkwrap": null,
+  "_spec": "angular@1.4.6",
+  "_where": "E:\\wamp\\www\\ZXSite",
+  "author": {
+    "name": "Angular Core Team",
+    "email": "angular-core+npm@google.com"
+  },
+  "bugs": {
+    "url": "https://github.com/angular/angular.js/issues"
+  },
+  "dependencies": {},
+  "description": "HTML enhanced for web apps",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "shasum": "905d2a916157826b7f6d7c832848aa98b16a1430",
+    "size": 493395,
+    "noattachment": false,
+    "tarball": "http://registry.npm.taobao.org/angular/download/angular-1.4.6.tgz"
+  },
+  "gitHead": "0e8a4e9b36704cacad159b99dd06bbcacef94975",
+  "homepage": "http://angularjs.org",
+  "keywords": [
+    "angular",
+    "framework",
+    "browser",
+    "client-side"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "maintainers": [
+    {
+      "name": "angularcore",
+      "email": "angular-core+npm@google.com"
+    },
+    {
+      "name": "petebd",
+      "email": "pete@bacondarwin.com"
+    }
+  ],
+  "name": "angular",
+  "optionalDependencies": {},
+  "publish_time": 1442492882163,
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/angular/angular.js.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.4.6"
+}

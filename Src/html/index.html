@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Amy's Blog</title>
+    <link rel="stylesheet" href="../lib/bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../lib/bootstrap/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="../css/style.css"/>
+</head>
+<body>
+<header id="pageHeader"></header>
+<!--导航-->
+<nav class="navbar navbar-fixed-top main-nav" ng-controller="mainCtrl">
+    <div class="container w">
+        <div class="row">
+            <div class="navbar-header">
+                <a href="/">
+                    <figure>
+                        <img src="../css/images/logo2.jpg"/>
+                    </figure>
+                </a>
+            </div>
+            <div class="navbar-collapse collapse navbar-right">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                    <li ng-repeat="item in mainData.menuItems" ui-sref="{{item.name}}" ng-class="{active:isActive('{{item.name}}')}"><a href="/" ng-bind="item.title"></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+<section class="content-wrap">
+    <div ui-view="">
+        <div class="page-loading"></div>
+    </div>
+</section>
+</body>
+<script data-main="../js/reqconfig" src="../lib/require.js"></script>
+</html>
