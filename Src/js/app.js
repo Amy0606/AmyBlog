@@ -7,7 +7,7 @@ define(["router"], function () {
             title:"求职简历",
             url:"/resume",
             tplUrl:"Resume/resume.html",
-            dependUrls:["../lib/modernizr.min","../lib/appear","../js/animate"]
+            dependUrls:["../lib/hammer.min","../lib/modernizr.min","../lib/appear","../js/animate"]
         }]
     };
     app.controller('mainCtrl', ['$scope','$location',function($scope, $location) {

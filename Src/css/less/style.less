@@ -2,7 +2,7 @@
 
 body {
   font-family: "微软雅黑";
-  font-size: @base-sft;
+  font-size: 14px;
   color: @base-c-black;
   background-color: @base-c-white;
 }
@@ -12,7 +12,7 @@ img {
 }
 
 .w {
-  width: 1200px;
+/*  width: 1200px;*/
   margin: 0 auto;
 }
 
@@ -21,23 +21,23 @@ img {
 }
 
 .page-loading {
-  .padding-t(300px);
-  .padding-b(300px);
+  .padding-t(35%);
+  .padding-b(35%);
   background: url(images/loading7.gif) no-repeat center center;
 }
 
 .btn-base {
-  width: 90px;
-  height: 40px;
+  width: 6.425rem;
+  height:2.85rem;
   font-size: @base-mft;
   background-color: @base-c-green;
   color: @base-c-white;
   border: 1px solid @base-c-green;
   font-weight: nomarl;
-  .radius-tl(20px);
-  .radius-tr(20px);
-  .radius-bl(20px);
-  .radius-br(20px);
+  .radius-tl(1.425rem);
+  .radius-tr(1.425rem);
+  .radius-bl(1.425rem);
+  .radius-br(1.425rem);
 }
 
 a.btn.btn-base {
@@ -51,16 +51,16 @@ a.btn.btn-base:active {
 }
 
 a.scrollup {
-  height: 32px;
-  width: 32px;
+  height: 2.285rem;
+  width: 2.285rem;
   color: #fff;
-  font-size: 18px;
-  line-height: 32px;
+  font-size: 1.285rem;
+  line-height: 2.285rem;
   text-align: center;
   text-decoration: none;
   position: fixed;
-  bottom: 10px;
-  right: 10px;
+  bottom: 0.715rem;
+  right: 0.715rem;
   z-index: 9999;
   opacity: 0.5;
   background-color: @base-c-green;
@@ -84,17 +84,17 @@ a.scrollup:hover {
 .navbar-header img{max-height: 85px;}
 
 .main-nav .navbar-right {
-  .margin-t(18px);
+  .margin-t(1.285rem);
   .margin-r(0);
 }
 
 .main-nav .navbar-nav {
-  .margin-t(11px);
+  .margin-t(0.715rem);
 }
 
 .main-nav .navbar-nav > li {
-  .padding-l(30px);
-  .padding-r(30px);
+  .padding-l(2.145rem);
+  .padding-r(2.145rem);
 }
 
 .main-nav .navbar-nav > li > a,
@@ -104,7 +104,7 @@ a.scrollup:hover {
   text-decoration: none;
   background-color: transparent;
   color: @base-c-black;
-  line-height: @base-mft+10;
+  line-height: @base-mft+0.715;
   border-bottom: 1px solid @base-c-white;
   .padding-t(0);
   .padding-b(0);
@@ -125,15 +125,15 @@ a.scrollup:hover {
 
 .modal-open {
   .navbar-fixed-top {
-    margin-right: 17px;
+    margin-right: 1.285rem;
   }
   .qq-consult {
-    right: 57px;
+    right: 4.05rem;
   }
 }
 
 .banner{
-  min-width: 1200px;
+  width:100%;
 }
 .content-state {
   .padding-b(40px);
@@ -147,23 +147,34 @@ a.scrollup:hover {
 }
 
 .pt-40 {
-  .padding-t(40px);
+  .padding-t(2.85rem);
 }
 
 .pl0{.padding-l(0);}
 .pr0{.padding-r(0);}
-.resume-banner{position: relative;max-height: 450px;overflow: hidden;}
-.m-base{position: absolute;width: 800px;height: 200px;top:50%;left: 50%;.margin-t(-100px);.margin-l(-400px);}
-.head-icon{width: 200px;height: 200px;overflow: hidden;
-  .radius-tl(@size:100px);
-  .radius-tr(@size:100px);
-  .radius-bl(@size:100px);
-  .radius-br(@size:100px);}
-.m-base-desc{.padding-t(20px);.padding-l(50px);}
-.m-base-desc p{font-size: @base-mft;line-height:@base-mft+15px;}
+.resume-banner{position: relative;max-height: 32.145rem;overflow: hidden;}
+.m-base{position: absolute;width: 57.145rem;height:14.285rem;top:50%;left: 50%;.margin-t(-7.145rem);.margin-l(-28.575rem);z-index: 2;}
+.head-icon{width: 14.285rem;height: 14.285rem;overflow: hidden;
+  .radius-tl(@size:7.145rem);
+  .radius-tr(@size:7.145rem);
+  .radius-bl(@size:7.145rem);
+  .radius-br(@size:7.145rem);}
+.m-base-desc{.padding-t(1.425rem);.padding-l(3.57rem);}
+.m-base-desc p{font-size: @base-mft;line-height:@base-mft+1.145;}
 .m-base-desc p.name{font-size:@base-mft*2; }
+@media (max-width: 767px) {
+  .m-base{position: absolute;width:100%;height:14.285rem;top:0;left:0;.margin-t(1rem);.margin-l(1rem);.margin-r(1rem);}
+  .head-icon{width:6rem;height: 6rem;overflow: hidden;
+    .radius-tl(@size:3rem);
+    .radius-tr(@size:3rem);
+    .radius-bl(@size:3rem);
+    .radius-br(@size:3rem);}
+  .m-base-desc{.padding-t(0);}
+  .m-base-desc p{font-size: @base-smft;line-height:@base-mft;}
+  .m-base-desc p.name{font-size:@base-mft; }
+}
 
-.m-ability p{text-align: left;font-size:@base-smft;line-height:@base-smft+12px;}
+.m-ability p{text-align: left;font-size:@base-smft;line-height:@base-smft+0.85;}
 @-webkit-keyframes twinkling{    /*透明度由0到1*/
   25% {
     -webkit-transform: scale(1);
@@ -183,8 +194,8 @@ a.scrollup:hover {
   }
 }
 .m-tech span{
-  display: inline-block;padding: 10px 20px;background: @base-c-green;color: @base-c-white;
-  margin: 10px;
+  display: inline-block;padding: 0.715rem 1.425rem;background: @base-c-green;color: @base-c-white;
+  margin: 0.715rem;
   vertical-align: middle;
   box-shadow: 0 0 1px transparent;
   -webkit-animation: twinkling 2s infinite ease-in-out;
@@ -230,25 +241,22 @@ a.scrollup:hover {
   transition-property: width, height;
 }
 .pro-item:hover:before, .pro-item:focus:before, .pro-item:active:before {
-  width: 25px;
-  height: 25px;
+  width: 1.785rem;
+  height: 1.785rem;
 }
 
 .m-contact{font-size: @base-mft;}
 .m-contact p{
-  .margin-t(15px);
+  .margin-t(1.145rem);
   h4{font-weight: bold;color:@base-c-green;}
 }
-.m-contact img{width: 150px;height: 150px;overflow: hidden;}
+.m-contact img{width:10.715rem;height:10.715rem;overflow: hidden;}
 
 /*工作经验栏目轮播*/
-.banner {
-  min-width: 1200px;
-}
 .banner .banner-prev, .banner .banner-next {
   content: '';
-  width: 30px;
-  height: 110px;
+  width: 2.145rem;
+  height: 7.85rem;
   position: absolute;
   color: @base-c-white;
   background-color: rgba(0, 0, 0, .25);
@@ -257,7 +265,7 @@ a.scrollup:hover {
   cursor: pointer;
   background-repeat: no-repeat;
   background-position: center;
-  top: 150px;
+  top: 10.715rem;
   display: none;
   background-size: cover;
   width: 0;
@@ -280,13 +288,13 @@ a.scrollup:hover {
   content: '\e257';
   left: 0;
   top: 0;
-  width: 30px;
-  height: 110px;
+  width: 2.145rem;
+  height:  7.85rem;
   display: block;
-  line-height: 110px;
+  line-height: 7.85rem;
   text-align: center;
   font-family: 'Glyphicons Halflings';
-  font-size: 20px;
+  font-size: @base-bmft;
   position: absolute;
   background: rgba(0, 0, 0, .25);
   -webkit-transition: all .5s ease;
@@ -301,13 +309,13 @@ a.scrollup:hover {
 
 .banner .banner-next:before {
   content: '\e258';
-  width: 30px;
-  height: 110px;
+  width: 2.145rem;
+  height:7.85rem;
   display: block;
-  line-height: 110px;
+  line-height:7.85rem;
   text-align: center;
   font-family: 'Glyphicons Halflings';
-  font-size: 20px;
+  font-size:@base-bmft;
   position: absolute;
   top: 0;
   right: 0;
@@ -320,7 +328,7 @@ a.scrollup:hover {
 .carousel-fade {
   .carousel-inner {
     .item {
-      height: 350px;
+      height: 25rem;
       transition-property: opacity;
     }
     .item1{
@@ -332,7 +340,7 @@ a.scrollup:hover {
     .item3{
       background-color:@base-c-red;
     }
-    .item-c{padding: 30px 100px;font-size: @base-bmft;line-height:@base-bmft+20px; }
+    .item-c{padding: 2.145rem 7.145rem;font-size: @base-bmft;line-height:@base-bmft+1.425; }
     .item,
     .active.left,
     .active.right {
@@ -356,6 +364,9 @@ a.scrollup:hover {
     z-index: 2;
   }
 }
+@media (max-width: 767px) {
+  .carousel-fade .carousel-inner .item-c{padding:3rem 1rem;font-size: @base-mft;line-height:@base-mft+1; }
+}
 
 /* --------------------------------
 
@@ -370,7 +381,7 @@ Vertical navigation
     top: 0;
     bottom: auto;
     height: 100vh;
-    width: 90px;
+    width: 6.425rem;
     max-width: none;
     max-height: none;
     overflow-y: auto;
@@ -391,7 +402,6 @@ Vertical navigation
     background-color: transparent;
     display: table;
   }
-
   .cd-vertical-nav::before {
     /* this is the navigation background */
     content: '';
@@ -482,8 +492,8 @@ Vertical navigation
   .cd-vertical-nav a::before {
     /* filled circle */
     top: 0;
-    height: 32px;
-    width: 32px;
+    height:2.285rem;
+    width: 2.285rem;
     border-radius: 50%;
     background: @base-c-green2;
     -webkit-transform: translateX(-50%) scale(0.25);
@@ -498,11 +508,11 @@ Vertical navigation
 
   .cd-vertical-nav a::after {
     opacity: 0;
-    height: 16px;
-    width: 16px;
+    height: 1.145rem;
+    width: 1.145rem;
     color: @base-c-white;
     font-size: @base-sft;
-    top: 6px;
+    top: 0.425rem;
     font-family: 'Glyphicons Halflings';
     -webkit-transform: translateX(-50%) scale(0);
     -moz-transform: translateX(-50%) scale(0);
@@ -646,3 +656,8 @@ Vertical navigation
     -o-transform: translateX(0);
     transform: translateX(0);
   }
+@media (max-width: 767px) {
+  .cd-vertical-nav {
+    display: none;
+  }
+}

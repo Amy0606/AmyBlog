@@ -1,0 +1,3 @@
+/*! AmyBlog 2017-07-19 */
+
+"use strict";!function(){var a={baseUrl:"",paths:{jquery:"../lib/jquery.min",bootstrap:"../lib/bootstrap/js/bootstrap.min",angular:"../lib/angular/angular.min",router:"../lib/angular-ui-router/release/angular-ui-router.min",app:"../js/app"},shim:{bootstrap:{deps:["jquery"]},angular:{deps:["bootstrap"]},router:{deps:["angular"]}}};require.config(a),requirejs(["app"],function(){angular.bootstrap(document.body,["AmyBlogApp"])})}();
