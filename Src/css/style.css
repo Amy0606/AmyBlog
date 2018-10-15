@@ -216,7 +216,7 @@ a.scrollup:hover {
     padding-top: 0;
   }
   .m-base-desc p {
-    font-size: 1.145rem;
+    font-size: 1rem;
     line-height: 1.285rem;
   }
   .m-base-desc p.name {
@@ -413,6 +413,9 @@ a.scrollup:hover {
 }
 .carousel-fade .carousel-inner .item3 {
   background-color: #ecc9c5;
+}
+.carousel-fade .carousel-inner .item4 {
+  background-color: #c3ebed;
 }
 .carousel-fade .carousel-inner .item-c {
   padding: 2.145rem 7.145rem;
